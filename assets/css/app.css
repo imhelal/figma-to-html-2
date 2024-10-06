@@ -1,0 +1,171 @@
+:root {
+  --primary-color: #fd6f00;
+  --white-text: #ffffff;
+  --black-text: #000000;
+  --gray-text: #424242;
+  --white-bg: #ffffff;
+  --black-bg: #1e1e1e;
+  --gray-bg: #f8f8f8;
+  --deep-gray: #edecec;
+}
+
+/* Common CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+  color: var(--black-text);
+  background-color: var(--white-bg);
+  font-weight: 400;
+  letter-spacing: 3%;
+  font-size: 21px;
+  transition: 0.3s;
+}
+body.dark {
+  background-color: var(--black-bg);
+  color: var(--white-text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-text);
+}
+.dark a {
+  color: var(--white-text);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.text-orange {
+  color: var(--primary-color);
+}
+
+.bg-orange {
+  background-color: var(--primary-color);
+}
+
+.btn.btn-primary {
+  background: var(--primary-color);
+  font-size: 21px;
+  padding: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white-text);
+  min-width: 188px;
+}
+
+.title {
+  font-size: 65px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title-desc {
+  font-size: 21px;
+  text-align: center;
+  max-width: 932px;
+  margin: 0 auto;
+}
+
+.theme-change {
+  width: 30px;
+  height: 30px;
+  background: var(--primary-color);
+  position: fixed;
+  left: 0;
+  top: 50%;
+  cursor: pointer;
+}
+/* Header CSS */
+header {
+  margin-top: 61px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+  align-items: center;
+}
+.logo img {
+  width: 279px;
+}
+
+.logo-dark {
+  display: none;
+}
+
+.dark .logo-white {
+  display: none;
+}
+.dark .logo-dark {
+  display: block;
+}
+
+header nav ul {
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+  align-items: center;
+}
+
+header nav ul li a {
+  font-size: 21px;
+  padding: 10px 14px;
+}
+
+/* Hero Section */
+.hero-section {
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-contnet h6 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.hero-contnet h5 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hero-contnet h1 {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.hero-contnet h1 span {
+  text-align: right;
+  display: block;
+}
+.hero-contnet p {
+  margin-top: 28px;
+  margin-bottom: 22px;
+}
+
+.hero-img {
+  text-align: center;
+}
+.hero-icons {
+  margin-top: 36px;
+}
+.hero-icons ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
